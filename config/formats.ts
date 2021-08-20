@@ -248,7 +248,7 @@ export const Formats: FormatList = [
 			battle: 24,
 		},
 		// no restrictions, for serious (other than team preview)
-		ruleset: ['Team Preview', 'Cancel Mod'],
+		ruleset: ['Team Preview', 'Cancel Mod', 'Sleep Clause Mod', 'Dynamax Clause', 'Little Cup', 'Evasion Moves Clause' ],
 	},
 
 	// Sw/Sh Doubles
