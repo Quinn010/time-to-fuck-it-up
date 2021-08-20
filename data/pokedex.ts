@@ -7634,7 +7634,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	mimejr: {
 		num: 439,
 		name: "Mime Jr.",
-		types: ["Psychic", "Fairy"],
+		types: ["Psychic"],
 		baseStats: {hp: 20, atk: 25, def: 45, spa: 70, spd: 90, spe: 60},
 		abilities: {0: "Soundproof", 1: "Filter", H: "Technician"},
 		heightm: 0.6,
