@@ -2585,7 +2585,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	mrmime: {
 		num: 122,
 		name: "Mr. Mime",
-		types: ["Psychic", "Fairy"],
+		types: ["Psychic"],
 		baseStats: {hp: 40, atk: 45, def: 65, spa: 100, spd: 120, spe: 90},
 		abilities: {0: "Soundproof", 1: "Filter", H: "Technician"},
 		heightm: 1.3,
@@ -5104,7 +5104,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	ralts: {
 		num: 280,
 		name: "Ralts",
-		types: ["Psychic", "Fairy"],
+		types: ["Psychic"],
 		baseStats: {hp: 28, atk: 25, def: 25, spa: 45, spd: 35, spe: 40},
 		abilities: {0: "Synchronize", 1: "Trace", H: "Telepathy"},
 		heightm: 0.4,
@@ -5354,7 +5354,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	azurill: {
 		num: 298,
 		name: "Azurill",
-		types: ["Normal", "Fairy"],
+		types: ["Normal"],
 		genderRatio: {M: 0.25, F: 0.75},
 		baseStats: {hp: 50, atk: 20, def: 40, spa: 20, spd: 40, spe: 20},
 		abilities: {0: "Thick Fat", 1: "Huge Power", H: "Sap Sipper"},
@@ -9529,7 +9529,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	cottonee: {
 		num: 546,
 		name: "Cottonee",
-		types: ["Grass", "Fairy"],
+		types: ["Grass"],
 		baseStats: {hp: 40, atk: 27, def: 60, spa: 37, spd: 50, spe: 66},
 		abilities: {0: "Prankster", 1: "Infiltrator", H: "Chlorophyll"},
 		heightm: 0.3,
