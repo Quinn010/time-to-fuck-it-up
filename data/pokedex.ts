@@ -969,7 +969,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	clefairy: {
 		num: 35,
 		name: "Clefairy",
-		types: ["Fairy"],
+		types: ["Normal"],
 		genderRatio: {M: 0.25, F: 0.75},
 		baseStats: {hp: 70, atk: 45, def: 48, spa: 60, spd: 65, spe: 35},
 		abilities: {0: "Cute Charm", 1: "Magic Guard", H: "Friend Guard"},
@@ -984,7 +984,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	clefable: {
 		num: 36,
 		name: "Clefable",
-		types: ["Fairy"],
+		types: ["Normal"],
 		genderRatio: {M: 0.25, F: 0.75},
 		baseStats: {hp: 95, atk: 70, def: 73, spa: 95, spd: 90, spe: 60},
 		abilities: {0: "Cute Charm", 1: "Magic Guard", H: "Unaware"},
@@ -1063,7 +1063,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	jigglypuff: {
 		num: 39,
 		name: "Jigglypuff",
-		types: ["Normal", "Fairy"],
+		types: ["Normal"],
 		genderRatio: {M: 0.25, F: 0.75},
 		baseStats: {hp: 115, atk: 45, def: 20, spa: 45, spd: 25, spe: 20},
 		abilities: {0: "Cute Charm", 1: "Competitive", H: "Friend Guard"},
@@ -3488,7 +3488,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	cleffa: {
 		num: 173,
 		name: "Cleffa",
-		types: ["Fairy"],
+		types: ["Normal"],
 		genderRatio: {M: 0.25, F: 0.75},
 		baseStats: {hp: 50, atk: 25, def: 28, spa: 45, spd: 55, spe: 15},
 		abilities: {0: "Cute Charm", 1: "Magic Guard", H: "Friend Guard"},
@@ -3502,7 +3502,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	igglybuff: {
 		num: 174,
 		name: "Igglybuff",
-		types: ["Normal", "Fairy"],
+		types: ["Normal"],
 		genderRatio: {M: 0.25, F: 0.75},
 		baseStats: {hp: 90, atk: 30, def: 15, spa: 40, spd: 20, spe: 15},
 		abilities: {0: "Cute Charm", 1: "Competitive", H: "Friend Guard"},
@@ -3516,7 +3516,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	togepi: {
 		num: 175,
 		name: "Togepi",
-		types: ["Fairy"],
+		types: ["Normal"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 35, atk: 20, def: 65, spa: 40, spd: 65, spe: 20},
 		abilities: {0: "Hustle", 1: "Serene Grace", H: "Super Luck"},
@@ -3639,7 +3639,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	marill: {
 		num: 183,
 		name: "Marill",
-		types: ["Water", "Fairy"],
+		types: ["Water"],
 		baseStats: {hp: 70, atk: 20, def: 50, spa: 20, spd: 50, spe: 40},
 		abilities: {0: "Thick Fat", 1: "Huge Power", H: "Sap Sipper"},
 		heightm: 0.4,
@@ -4014,7 +4014,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	snubbull: {
 		num: 209,
 		name: "Snubbull",
-		types: ["Fairy"],
+		types: ["Normal"],
 		genderRatio: {M: 0.25, F: 0.75},
 		baseStats: {hp: 60, atk: 80, def: 50, spa: 40, spd: 40, spe: 30},
 		abilities: {0: "Intimidate", 1: "Run Away", H: "Rattled"},
