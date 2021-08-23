@@ -7343,7 +7343,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			mudsport: ["3S1"],
 			naturalgift: ["4M"],
 			payday: ["8M", "8V", "7V"],
-			poweruppunch: ["6M"],
+			petaldance: ["7L1", "6L32", "5L32", "4L32"],
 			protect: ["8M", "8V", "7M", "7V", "6M", "5M", "4M", "3M"],
 			psybeam: ["8E", "8V", "7E", "7V", "6E", "5E", "4E", "3E"],
 			psychic: ["8M", "8V", "7M", "7V", "6M", "5M", "4M", "4E", "3E"],
