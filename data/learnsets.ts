@@ -9462,6 +9462,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			thunderpunch: ["8V", "7T", "6T", "5T", "4T"],
 			toxic: ["8V", "7M", "7V", "6M", "5M", "4M", "3M"],
 			wideguard: ["7E", "6E"],
+			rapidspin: ["8L9", "7L19", "7V", "6L19", "5L19", "4L19", "3L23"],
 		},
 		encounters: [
 			{generation: 1, level: 7},
