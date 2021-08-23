@@ -139,10 +139,7 @@ export const Formats: FormatList = [
 		maxLevel: 5,
 		ruleset: ['Little Cup', 'Standard NatDex', 'Dynamax Clause'],
 		banlist: [
-			'Corsola-Galar', 'Cutiefly','Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Vulpix-Alola', 'Amaura', 'Applin','Arrokuda', 'Bergmite', 'Binacle', 'Blipbug', 'Bounsweet', 'Bunnelby', 'Chewtle', 'Clauncher', 'Clobbopus', 'Cosmog', 'Cufant', 'Darumaka-Galar', 'Dewpider', 'Diglett-Alola', 'Dreepy', 'Espurr', 'Farfetch’d-Galar', 'Fletchling', 'Fomantis', 'Goomy', 'Gossifleur', 'Grookey', 'Grubbin', 'Hatenna', 'Helioptile', 'Honedge', 'Impidimp', 'Inkay', 'Jangmo-o', 'Litten', 'Mareanie', 'Meowth-Alola', 'Meowth-Galar', 'Milcery', 'Morelull'
-			, 'Mudbray', 'Morelull', 'Nickit', 'Noibat', 'Pancham', 'Phantump', 'Ponyta-Galar', 'Popplio', 'Pumpkaboo', 'Pumpkaboo-Large', 'Pumpkaboo-Small', 'Pumpkaboo-Super', 'Rockruff', 'Rookidee', 'Rowlet', 'Salandit', 'Sandshrew-Alola', 'Sandygast', 'Scorbunny',
-			'Scraggy', 'Silicobra', 'Sinistea', 'Sinistea-Antique', 'Sizzlipede', 'Skrelp', 'Skwovet', 'Slowpoke-Gala', 'Snom', 'Sobble', 'Spritzee', 'Stufful', 'Toxel', 'Wimpod', 'Wooloo', 'Yamask-Galar', 'Yamper', 'Zigzagoon-Galar', 'Meditite', 'Misdreavus', 'Murkrow',
-			'Chlorophyll', 'Moody', 'Baton Pass', 
+			'Corsola-Galar', 'Cutiefly','Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Vulpix-Alola', 
 		]
 	},
 	{
