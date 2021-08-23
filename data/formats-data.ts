@@ -103,7 +103,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	weedle: {
 		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "LC",
 	},
 	kakuna: {
 		isNonstandard: "Past",
@@ -118,7 +118,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	pidgey: {
 		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "LC",
 	},
 	pidgeotto: {
 		isNonstandard: "Past",
