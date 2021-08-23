@@ -382,7 +382,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			naturalgift: ["4M"],
 			outrage: ["8M", "8V", "7E", "7V", "6E", "5T", "5E", "4E", "3E"],
 			overheat: ["8M", "7M", "6M", "5M", "4M", "3M"],
-			poweruppunch: ["6M"],
 			protect: ["8M", "8V", "7M", "7V", "6M", "5M", "4M", "3M"],
 			quickattack: ["4S1", "4S2", "4S3", "4S5"],
 			rage: ["7V", "3L19"],
@@ -417,6 +416,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			willowisp: ["8M", "8V", "7M", "6M", "5M", "4M"],
 			wingattack: ["8E"],
 			workup: ["8M", "7M"],
+			hiddenpower: ["7M", "7V", "6M", "5M", "4M", "3M"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["scratch", "growl", "ember"], pokeball: "pokeball"},
@@ -776,6 +776,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			workup: ["8M", "7M"],
 			yawn: ["8E", "7E", "6E", "5E", "4E", "3E"],
 			zenheadbutt: ["8M", "7T", "6T", "5T", "4T"],
+			hiddenpower: ["7M", "7V", "6M", "5M", "4M", "3M"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["tackle", "tailwhip", "bubble", "withdraw"], pokeball: "pokeball"},
