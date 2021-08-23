@@ -14582,23 +14582,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {boost: {spe: 1}},
 		contestType: "Tough",
 	},
-	scorchingsands: {
-		num: 815,
-		accuracy: 100,
-		basePower: 70,
-		category: "Special",
-		name: "Scorching Sands",
-		pp: 10,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, defrost: 1},
-		thawsTarget: true,
-		secondary: {
-			chance: 30,
-			status: 'brn',
-		},
-		target: "normal",
-		type: "Ground",
-	},
 	scratch: {
 		num: 10,
 		accuracy: 100,
