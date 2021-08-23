@@ -102,7 +102,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUber)",
 	},
 	weedle: {
-		tier: "LC",
+		tier: "LCUU",
 	},
 	kakuna: {
 		isNonstandard: "Past",
