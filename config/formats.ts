@@ -139,7 +139,8 @@ export const Formats: FormatList = [
 		maxLevel: 5,
 		ruleset: ['Little Cup', 'Standard NatDex', 'Dynamax Clause'],
 		banlist: [
-			'Corsola-Galar', 'Cutiefly','Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Vulpix-Alola', 'Amaura', 'Applin','Arrokuda', 'Bergmite', 'Binacle', 'Blipbug', 'Bounsweet', 'Bunnelby', 'Chewtle', 'Clauncher', 'Clobbopus', 'Cosmog', 'Cufant', 'Darumaka-Galar', 'Dewpider', 'Diglett-Alola', 
+			'Corsola-Galar', 'Cutiefly','Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Vulpix-Alola', 'Amaura', 'Applin','Arrokuda', 'Bergmite', 'Binacle', 'Blipbug', 'Bounsweet', 'Bunnelby', 'Chewtle', 'Clauncher', 'Clobbopus', 'Cosmog', 'Cufant', 'Darumaka-Galar', 'Dewpider', 'Diglett-Alola', 'Dreepy', 'Espurr', 'Farfetch’d-Galar', 'Fletchling', 'Fomantis', 'Goomy', 'Gossifleur', 'Grookey', 'Grubbin', 'Hatenna', 'Helioptile', 'Honedge', 'Impidimp', 'Inkay', 'Jangmo-o', 'Litten', 'Mareanie', 'Meowth-Alola', 'Meowth-Galar', 'Milcery', 'Morelull'
+			, 'Mudbray', 'Morelull', 'Morelull', 'Morelull', 'Morelull', 'Morelull', 'Morelull', 'Morelull', 'Morelull', 'Morelull', 'Morelull', 'Morelull', 
 			'Chlorophyll', 'Moody', 'Baton Pass', 
 		]
 	},
@@ -153,7 +154,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen8',
 		maxLevel: 5,
-		ruleset: ['Little Cup', 'Standard', 'Dynamax Clause'],
+		ruleset: ['Little Cup', 'Standard NatDex', 'Dynamax Clause'],
 		banlist: [
 			'Corsola-Galar', 'Cutiefly', 'Drifloon', 'Gastly', 'Gothita', 'Rufflet', 'Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Vulpix-Alola',
 			'Chlorophyll', 'Moody', 'Baton Pass',
