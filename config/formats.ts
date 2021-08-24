@@ -59,7 +59,7 @@ export const Formats: FormatList = [
 
 },
 {
-	name: "[Gen 8] LC NU",
+	name: "[Gen 8] LC NU W.i.P",
 	threads: [
 		`&bullet; <a href="https://www.smogon.com/forums/threads/3656348/">LC Metagame Discussion</a>`,
 		`&bullet; <a href="https://www.smogon.com/forums/threads/3661419/">LC Sample Teams</a>`,
@@ -74,7 +74,16 @@ export const Formats: FormatList = [
 	'NU','OU','Porygon + Download', 'Trapinch + Arena Trap', 'Diglett + Arena Trap','UU', 'ZU'
 ]
 },
+{
+	name: "[Gen 7] Teambuilder ",
 
+	mod: 'gen7',
+	maxLevel: 5,
+	ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod', 'Switch Priority Clause Mod'],
+	banlist: [
+	'NU','OU','Porygon + Download', 'Trapinch + Arena Trap', 'Diglett + Arena Trap'
+]
+},
 	// Sw/Sh Doubles
 	///////////////////////////////////////////////////////////////////
 
