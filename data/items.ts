@@ -7093,9 +7093,9 @@ export const Items: {[itemid: string]: ItemData} = {
 	flyinggem: {
 		name: "Flying Gem",
         spritenum: 149,
-		isGem: true,
 		num: 556,
 		gen: 8,
+		isNonstandard: null,
 		desc: "Holder's first successful Flying-type attack will have 1.5x power. Single use.",
 		}
 	}
