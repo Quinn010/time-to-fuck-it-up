@@ -231,7 +231,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			this.boost({spd: 1});
 		},
 		num: 205,
-		gen: 3,
+		gen: 8,
 	},
 	armorfossil: {
 		name: "Armor Fossil",
@@ -367,8 +367,8 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onEat: false,
 		num: 183,
-		gen: 3,
-		isNonstandard: "Past",
+		gen: 8,
+
 	},
 	berryjuice: {
 		name: "Berry Juice",
@@ -384,7 +384,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			}
 		},
 		num: 43,
-		gen: 2,
+		gen: 8,
 	},
 	berrysweet: {
 		name: "Berry Sweet",
@@ -1041,7 +1041,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onEat() { },
 		num: 210,
-		gen: 4,
+		gen: 8,
 		isNonstandard: "Unobtainable",
 	},
 	damprock: {
@@ -1339,8 +1339,8 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onEat: false,
 		num: 182,
-		gen: 3,
-		isNonstandard: "Past",
+		gen: 8,
+		
 	},
 	duskball: {
 		name: "Dusk Ball",
@@ -1542,7 +1542,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onEat() { },
 		num: 208,
-		gen: 3,
+		gen: 8,
 		isNonstandard: "Unobtainable",
 	},
 	eviolite: {
@@ -1975,7 +1975,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			this.boost({def: 1});
 		},
 		num: 202,
-		gen: 3,
+		gen: 8,
 	},
 	garchompite: {
 		name: "Garchompite",
@@ -2568,7 +2568,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onEat() { },
 		num: 211,
-		gen: 4,
+		gen: 8,
 		isNonstandard: "Unobtainable",
 	},
 	jawfossil: {
@@ -2736,7 +2736,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			pokemon.addVolatile('focusenergy');
 		},
 		num: 206,
-		gen: 3,
+		gen: 8,
 	},
 	latiasite: {
 		name: "Latiasite",
@@ -2873,7 +2873,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			this.boost({atk: 1});
 		},
 		num: 201,
-		gen: 3,
+		gen: 8,
 	},
 	lifeorb: {
 		name: "Life Orb",
@@ -3195,7 +3195,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			this.boost({spd: 1});
 		},
 		num: 688,
-		gen: 6,
+		gen: 8,
 	},
 	marshadiumz: {
 		name: "Marshadium Z",
@@ -3450,7 +3450,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			},
 		},
 		num: 209,
-		gen: 4,
+		gen: 8,
 		isNonstandard: "Unobtainable",
 	},
 	mimikiumz: {
@@ -3738,8 +3738,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onEat: false,
 		num: 180,
-		gen: 3,
-		isNonstandard: "Past",
+		gen: 8,
 	},
 	parkball: {
 		name: "Park Ball",
@@ -3853,7 +3852,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			this.boost({spa: 1});
 		},
 		num: 204,
-		gen: 3,
+		gen: 8,
 	},
 	pidgeotite: {
 		name: "Pidgeotite",
@@ -4663,7 +4662,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onEat() { },
 		num: 212,
-		gen: 4,
+		gen: 8,
 		isNonstandard: "Unobtainable",
 	},
 	rustedshield: {
@@ -4769,7 +4768,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			this.boost({spe: 1});
 		},
 		num: 203,
-		gen: 3,
+		gen: 8,
 	},
 	salamencite: {
 		name: "Salamencite",
@@ -5232,7 +5231,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			}
 		},
 		num: 207,
-		gen: 3,
+		gen: 8,
 	},
 	starsweet: {
 		name: "Star Sweet",
@@ -6610,8 +6609,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onEat: false,
 		num: 181,
-		gen: 3,
-		isNonstandard: "Past",
+		gen: 8,
 	},
 	waveincense: {
 		name: "Wave Incense",
