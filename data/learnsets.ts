@@ -12586,7 +12586,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			takedown: ["7V"],
 			taunt: ["8V", "7M", "6M", "5M", "4M", "3M"],
 			telekinesis: ["7T", "5M"],
-			teleport: ["8V", "7V"],
+			teleport: ["8V", "7V","3S0"],
 			thief: ["7M", "6M", "5M", "4M", "3M"],
 			thunderpunch: ["8V", "7T", "7E", "7V", "6T", "6E", "5T", "5E", "4T", "4E", "3T", "3E"],
 			thunderwave: ["8V", "7M", "7V", "6M", "5M", "4M", "3T"],
