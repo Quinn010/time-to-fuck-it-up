@@ -1823,7 +1823,6 @@ export const Items: {[itemid: string]: ItemData} = {
 	flyinggem: {
 		name: "Flying Gem",
 		spritenum: 149,
-		isGem: true,
 		isNonstandard: null,
 		onSourceTryPrimaryHit(target, source, move) {
 			if (target === source || move.category === 'Status') return;
