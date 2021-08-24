@@ -139,7 +139,12 @@ export const Formats: FormatList = [
 		maxLevel: 5,
 		ruleset: ['Little Cup', 'Standard NatDex', 'Dynamax Clause'],
 		banlist: [
+<<<<<<< HEAD
 			'Corsola-Galar', 'Cutiefly','Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Vulpix-Alola', 
+=======
+			'Corsola-Galar', 'Cutiefly', 'Drifloon', 'Gastly', 'Gothita', 'Rufflet', 'Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Vulpix-Alola',
+			'Chlorophyll', 'Moody', 'Baton Pass',
+>>>>>>> parent of e680602af (Update formats.ts)
 		]
 	},
 	{
@@ -155,7 +160,7 @@ export const Formats: FormatList = [
 		ruleset: ['Little Cup', 'Standard NatDex', 'Dynamax Clause'],
 		banlist: [
 			'Corsola-Galar', 'Cutiefly', 'Drifloon', 'Gastly', 'Gothita', 'Rufflet', 'Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Vulpix-Alola',
-			'Chlorophyll', 'Moody', 'Baton Pass', 'XD'
+			'Chlorophyll', 'Moody', 'Baton Pass',
 		],
 	},
 	{
@@ -171,7 +176,7 @@ export const Formats: FormatList = [
 		ruleset: ['Little Cup', 'Standard NatDex', 'Dynamax Clause'],
 		banlist: [
 			'Corsola-Galar', 'Cutiefly', 'Drifloon', 'Gastly', 'Gothita', 'Rufflet', 'Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Vulpix-Alola',
-			'Chlorophyll', 'Moody', 'Baton Pass', 'LCOU'
+			'Chlorophyll', 'Moody', 'Baton Pass'
 		],
 	},
 	{
