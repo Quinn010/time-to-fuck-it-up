@@ -2321,7 +2321,8 @@ export const Items: {[itemid: string]: ItemData} = {
 			basePower: 80,
 		},
 		num: 1120,
-		gen: 8,
+		gen: 5,
+		isNonstandard: "Past",
 		// Hazard Immunity implemented in moves.js
 	},
 	helixfossil: {
@@ -6646,7 +6647,8 @@ export const Items: {[itemid: string]: ItemData} = {
 			spa: 2,
 		},
 		num: 639,
-		gen: 6,
+		gen: 5,
+		isNonstandard: "Past",
 	},
 	wepearberry: {
 		name: "Wepear Berry",
