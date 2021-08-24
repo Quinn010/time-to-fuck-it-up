@@ -139,7 +139,7 @@ export const Formats: FormatList = [
 		maxLevel: 5,
 		ruleset: ['Little Cup', 'Standard NatDex', 'Dynamax Clause'],
 		banlist: [
-		'NU' , 'OU','Porygon + Download'
+		'NU' ,'OU','Porygon + Download'
 		]
 	},
 	{
