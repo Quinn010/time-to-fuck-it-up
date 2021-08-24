@@ -531,7 +531,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DUU",
 	},
 	abra: {
-		tier: "LC",
+		tier: "UU",
 	},
 	kadabra: {
 		tier: "PU",
