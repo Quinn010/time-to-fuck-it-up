@@ -1577,24 +1577,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Flying",
 		contestType: "Cool",
 	},
-	breakingswipe: {
-		num: 784,
-		accuracy: 100,
-		basePower: 60,
-		category: "Physical",
-		name: "Breaking Swipe",
-		pp: 15,
-		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
-		secondary: {
-			chance: 100,
-			boosts: {
-				atk: -1,
-			},
-		},
-		target: "allAdjacentFoes",
-		type: "Dragon",
-	},
 	breakneckblitz: {
 		num: 622,
 		accuracy: true,
@@ -2495,25 +2477,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Steel",
 		contestType: "Cool",
-	},
-	corrosivegas: {
-		num: 810,
-		accuracy: 100,
-		basePower: 0,
-		category: "Status",
-		name: "Corrosive Gas",
-		pp: 40,
-		priority: 0,
-		flags: {protect: 1, reflectable: 1, mirror: 1, mystery: 1},
-		onHit(target, source) {
-			const item = target.takeItem(source);
-			if (item) {
-				this.add('-enditem', target, item.name, '[from] move: Corrosive Gas', '[of] ' + source);
-			}
-		},
-		secondary: null,
-		target: "allAdjacent",
-		type: "Poison",
 	},
 	cosmicpower: {
 		num: 322,
@@ -3652,21 +3615,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Dragon",
 		contestType: "Tough",
-	},
-	drainingkiss: {
-		num: 577,
-		accuracy: 100,
-		basePower: 50,
-		category: "Special",
-		name: "Draining Kiss",
-		pp: 10,
-		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, heal: 1},
-		drain: [3, 4],
-		secondary: null,
-		target: "normal",
-		type: "Fairy",
-		contestType: "Cute",
+
 	},
 	drainpunch: {
 		num: 409,
@@ -3865,24 +3814,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Normal",
 		contestType: "Beautiful",
 	},
-	eerieimpulse: {
-		num: 598,
-		accuracy: 100,
-		basePower: 0,
-		category: "Status",
-		name: "Eerie Impulse",
-		pp: 15,
-		priority: 0,
-		flags: {protect: 1, reflectable: 1, mirror: 1},
-		boosts: {
-			spa: -2,
-		},
-		secondary: null,
-		target: "normal",
-		type: "Electric",
-		zMove: {boost: {spd: 1}},
-		contestType: "Clever",
-	},
 	eggbomb: {
 		num: 121,
 		accuracy: 75,
@@ -3897,65 +3828,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Normal",
 		contestType: "Cute",
-	},
-	electricterrain: {
-		num: 604,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Electric Terrain",
-		pp: 10,
-		priority: 0,
-		flags: {nonsky: 1},
-		terrain: 'electricterrain',
-		condition: {
-			duration: 5,
-			durationCallback(source, effect) {
-				if (source?.hasItem('terrainextender')) {
-					return 8;
-				}
-				return 5;
-			},
-			onSetStatus(status, target, source, effect) {
-				if (status.id === 'slp' && target.isGrounded() && !target.isSemiInvulnerable()) {
-					if (effect.id === 'yawn' || (effect.effectType === 'Move' && !effect.secondaries)) {
-						this.add('-activate', target, 'move: Electric Terrain');
-					}
-					return false;
-				}
-			},
-			onTryAddVolatile(status, target) {
-				if (!target.isGrounded() || target.isSemiInvulnerable()) return;
-				if (status.id === 'yawn') {
-					this.add('-activate', target, 'move: Electric Terrain');
-					return null;
-				}
-			},
-			onBasePowerPriority: 6,
-			onBasePower(basePower, attacker, defender, move) {
-				if (move.type === 'Electric' && attacker.isGrounded() && !attacker.isSemiInvulnerable()) {
-					this.debug('electric terrain boost');
-					return this.chainModify([0x14CD, 0x1000]);
-				}
-			},
-			onStart(battle, source, effect) {
-				if (effect?.effectType === 'Ability') {
-					this.add('-fieldstart', 'move: Electric Terrain', '[from] ability: ' + effect, '[of] ' + source);
-				} else {
-					this.add('-fieldstart', 'move: Electric Terrain');
-				}
-			},
-			onResidualOrder: 21,
-			onResidualSubOrder: 2,
-			onEnd() {
-				this.add('-fieldend', 'move: Electric Terrain');
-			},
-		},
-		secondary: null,
-		target: "all",
-		type: "Electric",
-		zMove: {boost: {spe: 1}},
-		contestType: "Clever",
 	},
 	electrify: {
 		num: 582,
@@ -8707,21 +8579,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Fire",
 		contestType: "Cool",
 	},
-	infestation: {
-		num: 611,
-		accuracy: 100,
-		basePower: 20,
-		category: "Special",
-		name: "Infestation",
-		pp: 20,
-		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
-		volatileStatus: 'partiallytrapped',
-		secondary: null,
-		target: "normal",
-		type: "Bug",
-		contestType: "Cute",
-	},
 	ingrain: {
 		num: 275,
 		accuracy: true,
@@ -11064,118 +10921,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Psychic",
 		contestType: "Clever",
 	},
-	mistyexplosion: {
-		num: 802,
-		accuracy: 100,
-		basePower: 100,
-		category: "Special",
-		name: "Misty Explosion",
-		pp: 5,
-		priority: 0,
-		flags: {protect: 1, mirror: 1},
-		selfdestruct: "always",
-		onBasePower(basePower, source) {
-			if (this.field.isTerrain('mistyterrain') && source.isGrounded()) {
-				this.debug('misty terrain boost');
-				return this.chainModify(1.5);
-			}
-		},
-		secondary: null,
-		target: "allAdjacent",
-		type: "Fairy",
-	},
-	mistyterrain: {
-		num: 581,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Misty Terrain",
-		pp: 10,
-		priority: 0,
-		flags: {nonsky: 1},
-		terrain: 'mistyterrain',
-		condition: {
-			duration: 5,
-			durationCallback(source, effect) {
-				if (source?.hasItem('terrainextender')) {
-					return 8;
-				}
-				return 5;
-			},
-			onSetStatus(status, target, source, effect) {
-				if (!target.isGrounded() || target.isSemiInvulnerable()) return;
-				if (effect && ((effect as Move).status || effect.id === 'yawn')) {
-					this.add('-activate', target, 'move: Misty Terrain');
-				}
-				return false;
-			},
-			onTryAddVolatile(status, target, source, effect) {
-				if (!target.isGrounded() || target.isSemiInvulnerable()) return;
-				if (status.id === 'confusion') {
-					if (effect.effectType === 'Move' && !effect.secondaries) this.add('-activate', target, 'move: Misty Terrain');
-					return null;
-				}
-			},
-			onBasePowerPriority: 6,
-			onBasePower(basePower, attacker, defender, move) {
-				if (move.type === 'Dragon' && defender.isGrounded() && !defender.isSemiInvulnerable()) {
-					this.debug('misty terrain weaken');
-					return this.chainModify(0.5);
-				}
-			},
-			onStart(battle, source, effect) {
-				if (effect?.effectType === 'Ability') {
-					this.add('-fieldstart', 'move: Misty Terrain', '[from] ability: ' + effect, '[of] ' + source);
-				} else {
-					this.add('-fieldstart', 'move: Misty Terrain');
-				}
-			},
-			onResidualOrder: 21,
-			onResidualSubOrder: 2,
-			onEnd(side) {
-				this.add('-fieldend', 'Misty Terrain');
-			},
-		},
-		secondary: null,
-		target: "all",
-		type: "Fairy",
-		zMove: {boost: {spd: 1}},
-		contestType: "Beautiful",
-	},
-	moonblast: {
-		num: 585,
-		accuracy: 100,
-		basePower: 95,
-		category: "Special",
-		name: "Moonblast",
-		pp: 15,
-		priority: 0,
-		flags: {protect: 1, mirror: 1},
-		secondary: {
-			chance: 30,
-			boosts: {
-				spa: -1,
-			},
-		},
-		target: "normal",
-		type: "Fairy",
-		contestType: "Beautiful",
-	},
-	moongeistbeam: {
-		num: 714,
-		accuracy: 100,
-		basePower: 100,
-		category: "Special",
-		name: "Moongeist Beam",
-		pp: 5,
-		priority: 0,
-		flags: {protect: 1, mirror: 1},
-		ignoreAbility: true,
-		secondary: null,
-		target: "normal",
-		type: "Ghost",
-		contestType: "Cool",
-	},
 	moonlight: {
 		num: 236,
 		accuracy: true,
@@ -11368,25 +11113,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {basePower: 185},
 		maxMove: {basePower: 95},
 		contestType: "Tough",
-	},
-	mysticalfire: {
-		num: 595,
-		accuracy: 100,
-		basePower: 75,
-		category: "Special",
-		name: "Mystical Fire",
-		pp: 10,
-		priority: 0,
-		flags: {protect: 1, mirror: 1},
-		secondary: {
-			chance: 100,
-			boosts: {
-				spa: -1,
-			},
-		},
-		target: "normal",
-		type: "Fire",
-		contestType: "Beautiful",
 	},
 	nastyplot: {
 		num: 417,
@@ -12744,88 +12470,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Psychic",
-		contestType: "Clever",
-	},
-	psychicfangs: {
-		num: 706,
-		accuracy: 100,
-		basePower: 85,
-		category: "Physical",
-		name: "Psychic Fangs",
-		pp: 10,
-		priority: 0,
-		flags: {bite: 1, contact: 1, protect: 1, mirror: 1},
-		onTryHit(pokemon) {
-			// will shatter screens through sub, before you hit
-			if (pokemon.runImmunity('Psychic')) {
-				pokemon.side.removeSideCondition('reflect');
-				pokemon.side.removeSideCondition('lightscreen');
-				pokemon.side.removeSideCondition('auroraveil');
-			}
-		},
-		secondary: null,
-		target: "normal",
-		type: "Psychic",
-		contestType: "Clever",
-	},
-	psychicterrain: {
-		num: 678,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Psychic Terrain",
-		pp: 10,
-		priority: 0,
-		flags: {nonsky: 1},
-		terrain: 'psychicterrain',
-		condition: {
-			duration: 5,
-			durationCallback(source, effect) {
-				if (source?.hasItem('terrainextender')) {
-					return 8;
-				}
-				return 5;
-			},
-			onTryHitPriority: 4,
-			onTryHit(target, source, effect) {
-				if (effect && (effect.priority <= 0.1 || effect.target === 'self')) {
-					return;
-				}
-				if (target.isSemiInvulnerable() || target.side === source.side) return;
-				if (!target.isGrounded()) {
-					const baseMove = this.dex.getMove(effect.id);
-					if (baseMove.priority > 0) {
-						this.hint("Psychic Terrain doesn't affect Pokémon immune to Ground.");
-					}
-					return;
-				}
-				this.add('-activate', target, 'move: Psychic Terrain');
-				return null;
-			},
-			onBasePowerPriority: 6,
-			onBasePower(basePower, attacker, defender, move) {
-				if (move.type === 'Psychic' && attacker.isGrounded() && !attacker.isSemiInvulnerable()) {
-					this.debug('psychic terrain boost');
-					return this.chainModify([0x14CD, 0x1000]);
-				}
-			},
-			onStart(battle, source, effect) {
-				if (effect?.effectType === 'Ability') {
-					this.add('-fieldstart', 'move: Psychic Terrain', '[from] ability: ' + effect, '[of] ' + source);
-				} else {
-					this.add('-fieldstart', 'move: Psychic Terrain');
-				}
-			},
-			onResidualOrder: 21,
-			onResidualSubOrder: 2,
-			onEnd() {
-				this.add('-fieldend', 'move: Psychic Terrain');
-			},
-		},
-		secondary: null,
-		target: "all",
-		type: "Psychic",
-		zMove: {boost: {spa: 1}},
 		contestType: "Clever",
 	},
 	psychoboost: {
@@ -15679,42 +15323,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Grass",
 		contestType: "Cool",
-	},
-	solarblade: {
-		num: 669,
-		accuracy: 100,
-		basePower: 125,
-		category: "Physical",
-		name: "Solar Blade",
-		pp: 10,
-		priority: 0,
-		flags: {contact: 1, charge: 1, protect: 1, mirror: 1},
-		onTryMove(attacker, defender, move) {
-			if (attacker.removeVolatile(move.id)) {
-				return;
-			}
-			this.add('-prepare', attacker, move.name);
-			if (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather())) {
-				this.attrLastMove('[still]');
-				this.addMove('-anim', attacker, move.name, defender);
-				return;
-			}
-			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
-				return;
-			}
-			attacker.addVolatile('twoturnmove', defender);
-			return null;
-		},
-		onBasePower(basePower, pokemon, target) {
-			if (['raindance', 'primordialsea', 'sandstorm', 'hail'].includes(pokemon.effectiveWeather())) {
-				this.debug('weakened by weather');
-				return this.chainModify(0.5);
-			}
-		},
-		secondary: null,
-		target: "normal",
-		type: "Grass",
-		contestType: "Cool",
+
 	},
 	soulstealing7starstrike: {
 		num: 699,
@@ -15826,27 +15435,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Ghost",
 		contestType: "Cool",
-	},
-	speedswap: {
-		num: 683,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Speed Swap",
-		pp: 10,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, authentic: 1, mystery: 1},
-		onHit(target, source) {
-			const targetSpe = target.storedStats.spe;
-			target.storedStats.spe = source.storedStats.spe;
-			source.storedStats.spe = targetSpe;
-			this.add('-activate', source, 'move: Speed Swap', '[of] ' + target);
-		},
-		secondary: null,
-		target: "normal",
-		type: "Psychic",
-		zMove: {boost: {spe: 1}},
-		contestType: "Clever",
 	},
 	spiderweb: {
 		num: 169,
@@ -16229,44 +15817,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Bug",
 		contestType: "Tough",
 	},
-	steelbeam: {
-		num: 796,
-		accuracy: 95,
-		basePower: 140,
-		category: "Special",
-		name: "Steel Beam",
-		pp: 5,
-		priority: 0,
-		flags: {protect: 1, mirror: 1},
-		mindBlownRecoil: true,
-		onAfterMove(pokemon, target, move) {
-			if (move.mindBlownRecoil && !move.multihit) {
-				this.damage(Math.round(pokemon.maxhp / 2), pokemon, pokemon, this.dex.getEffect('Steel Beam'), true);
-			}
-		},
-		secondary: null,
-		target: "normal",
-		type: "Steel",
-	},
-	steelroller: {
-		num: 798,
-		accuracy: 100,
-		basePower: 130,
-		category: "Physical",
-		name: "Steel Roller",
-		pp: 5,
-		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
-		onTryHit() {
-			if (this.field.isTerrain('')) return false;
-		},
-		onHit() {
-			this.field.clearTerrain();
-		},
-		secondary: null,
-		target: "normal",
-		type: "Steel",
-	},
 	steelwing: {
 		num: 211,
 		accuracy: 90,
@@ -16287,33 +15837,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Steel",
 		contestType: "Cool",
-	},
-	stickyweb: {
-		num: 564,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Sticky Web",
-		pp: 20,
-		priority: 0,
-		flags: {reflectable: 1},
-		sideCondition: 'stickyweb',
-		condition: {
-			onStart(side) {
-				this.add('-sidestart', side, 'move: Sticky Web');
-			},
-			onSwitchIn(pokemon) {
-				if (!pokemon.isGrounded()) return;
-				if (pokemon.hasItem('heavydutyboots')) return;
-				this.add('-activate', pokemon, 'move: Sticky Web');
-				this.boost({spe: -1}, pokemon, this.effectData.source, this.dex.getActiveMove('stickyweb'));
-			},
-		},
-		secondary: null,
-		target: "foeSide",
-		type: "Bug",
-		zMove: {boost: {spe: 1}},
-		contestType: "Tough",
+
 	},
 	stockpile: {
 		num: 254,
@@ -17576,49 +17100,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Normal",
 		contestType: "Tough",
 	},
-	throatchop: {
-		num: 675,
-		accuracy: 100,
-		basePower: 80,
-		category: "Physical",
-		name: "Throat Chop",
-		pp: 15,
-		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
-		condition: {
-			duration: 2,
-			onStart(target) {
-				this.add('-start', target, 'Throat Chop', '[silent]');
-			},
-			onDisableMove(pokemon) {
-				for (const moveSlot of pokemon.moveSlots) {
-					if (this.dex.getMove(moveSlot.id).flags['sound']) {
-						pokemon.disableMove(moveSlot.id);
-					}
-				}
-			},
-			onBeforeMovePriority: 6,
-			onBeforeMove(pokemon, target, move) {
-				if (!move.isZ && !move.isMax && move.flags['sound']) {
-					this.add('cant', pokemon, 'move: Throat Chop');
-					return false;
-				}
-			},
-			onResidualOrder: 22,
-			onEnd(target) {
-				this.add('-end', target, 'Throat Chop', '[silent]');
-			},
-		},
-		secondary: {
-			chance: 100,
-			onHit(target) {
-				target.addVolatile('throatchop');
-			},
-		},
-		target: "normal",
-		type: "Dark",
-		contestType: "Clever",
-	},
 	thunder: {
 		num: 87,
 		accuracy: 70,
@@ -18051,26 +17532,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Psychic",
 		zMove: {boost: {accuracy: 1}},
 		contestType: "Clever",
-	},
-	tripleaxel: {
-		num: 813,
-		accuracy: 90,
-		basePower: 20,
-		basePowerCallback(pokemon, target, move) {
-			return 20 * move.hit;
-		},
-		category: "Physical",
-		name: "Triple Axel",
-		pp: 10,
-		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
-		multihit: 3,
-		multiaccuracy: true,
-		secondary: null,
-		target: "normal",
-		type: "Ice",
-		zMove: {basePower: 120},
-		maxMove: {basePower: 140},
 	},
 	triplekick: {
 		num: 167,
