@@ -290,7 +290,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen8',
 		gameType: 'doubles',
-		ruleset: ['Standard Doubles', 'Dynamax Clause'],
+		ruleset: ['Standard Doubles', 'Dynamax Clause','Standard NatDex'],
 		banlist: ['DUber', 'Beat Up'],
 	},
 	{
