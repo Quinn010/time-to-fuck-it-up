@@ -12601,10 +12601,11 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			zenheadbutt: ["7T", "7L41", "6T", "6L41", "5T", "5L41", "4T", "4L50"],
 		},
 		eventData: [
-			{generation: 7, level: 5, shiny: 1, abilities: ["insomnia"], moves: ["bellydrum", "wish", "teleport"], pokeball: "pokeball"},
+			{generation: 1, level: 5, shiny: 1, abilities: ["insomnia"], moves: ["bellydrum", "wish", "teleport"], pokeball: "pokeball"},
 		],
 		encounters: [
-			{generation: 1, level: 9},
+			{generation: 7, level: 5, shiny: 1, abilities: ["insomnia"], moves: ["bellydrum", "wish", "teleport"], pokeball: "pokeball"},
+
 		],
 	},
 	hypno: {
