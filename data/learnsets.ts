@@ -416,7 +416,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			willowisp: ["8M", "8V", "7M", "6M", "5M", "4M"],
 			wingattack: ["8E"],
 			workup: ["8M", "7M"],
-			hiddenpower: ["7M", "7V", "6M", "5M", "4M", "3M"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["scratch", "growl", "ember"], pokeball: "pokeball"},
@@ -776,7 +775,6 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			workup: ["8M", "7M"],
 			yawn: ["8E", "7E", "6E", "5E", "4E", "3E"],
 			zenheadbutt: ["8M", "7T", "6T", "5T", "4T"],
-			hiddenpower: ["7M", "7V", "6M", "5M", "4M", "3M"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["tackle", "tailwhip", "bubble", "withdraw"], pokeball: "pokeball"},
@@ -2109,10 +2107,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			torment: ["7M", "6M", "5M", "4M", "3M"],
 			toxic: ["8V", "7M", "7V", "6M", "5M", "4M", "3M"],
 			venoshock: ["7M", "6M", "5M"],
-			wrap: ["8V", "7L1", "7V", "6L1", "5L1", "4L1", "3L1", "3S0", "3S1"],
-			pursuit: ["7L17", "7V", "6L22", "5L22", "4L22", "3L30"],
-			hiddenpower: ["7M", "7V", "6M", "5M", "4M", "3M"],
-
+			wrap: ["8V", "7L1", "7V", "6L1", "5L1", "4L1", "3L1", "3S0", "3S1"]
 		},
 		eventData: [
 			{generation: 3, level: 14, gender: "F", nature: "Docile", ivs: {hp: 26, atk: 28, def: 6, spa: 14, spd: 30, spe: 11}, abilities: ["shedskin"], moves: ["leer", "wrap", "poisonsting", "bite"], pokeball: "pokeball"},
