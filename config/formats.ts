@@ -139,7 +139,7 @@ export const Formats: FormatList = [
 		maxLevel: 5,
 		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod', 'Switch Priority Clause Mod'],
 		banlist: [
-		'NU','OU','Porygon + Download',  
+		'NU','OU','Porygon + Download', 'Trapinch + Arena Trap', 'Diglett + Arena Trap'
 		]
 	},
 	{
@@ -154,7 +154,7 @@ export const Formats: FormatList = [
 		maxLevel: 5,
 		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Dynamax Clause', 'Sleep Clause Mod', 'Switch Priority Clause Mod'],
 		banlist: [
-		'NU','OU','Porygon + Download','UU', 
+		'NU','OU','Porygon + Download','UU', 'Trapinch + Arena Trap', 'Diglett + Arena Trap'
 		]
 	},
 	{
