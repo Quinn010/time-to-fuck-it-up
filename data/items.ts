@@ -1042,6 +1042,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onEat() { },
 		num: 210,
 		gen: 8,
+		isNonstandard: "Unobtainable",
 	},
 	damprock: {
 		name: "Damp Rock",
@@ -1542,6 +1543,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onEat() { },
 		num: 208,
 		gen: 8,
+		isNonstandard: "Unobtainable",
 	},
 	eviolite: {
 		name: "Eviolite",
@@ -1816,19 +1818,6 @@ export const Items: {[itemid: string]: ItemData} = {
 			basePower: 0,
 		},
 		num: 1113,
-		gen: 8,
-	},
-	flyinggem: {
-		name: "Flying Gem",
-		spritenum: 149,
-		isGem: true,
-		onSourceTryPrimaryHit(target, source, move) {
-			if (target === source || move.category === 'Status') return;
-			if (move.type === 'Flying' && source.useItem()) {
-				source.addVolatile('gem');
-			}
-		},
-		num: 556,
 		gen: 8,
 	},
 	flyingmemory: {
@@ -2567,6 +2556,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		onEat() { },
 		num: 211,
 		gen: 8,
+		isNonstandard: "Unobtainable",
 	},
 	jawfossil: {
 		name: "Jaw Fossil",
@@ -3448,6 +3438,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		num: 209,
 		gen: 8,
+		isNonstandard: "Unobtainable",
 	},
 	mimikiumz: {
 		name: "Mimikium Z",
@@ -4658,8 +4649,8 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		onEat() { },
 		num: 212,
-		gen: 8,
-		
+		gen: 4,
+		isNonstandard: "Unobtainable",
 	},
 	rustedshield: {
 		name: "Rusted Shield",
@@ -7099,21 +7090,13 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 2,
 		isNonstandard: "Past",
 	},
+	flyinggem: {
+		name: "Flying Gem",
+        spritenum: 149,
+		isGem: true,
+		num: 556,
+		gen: 8,
+		desc: "Holder's first successful Flying-type attack will have 1.5x power. Single use.",
+		}
+	}
 
-	// CAP items
-
-	crucibellite: {
-		name: "Crucibellite",
-		spritenum: 577,
-		megaStone: "Crucibelle-Mega",
-		megaEvolves: "Crucibelle",
-		itemUser: ["Crucibelle"],
-		onTakeItem(item, source) {
-			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
-			return true;
-		},
-		num: -1,
-		gen: 6,
-		isNonstandard: "CAP",
-	},
-};
