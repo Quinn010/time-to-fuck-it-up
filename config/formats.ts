@@ -84,10 +84,9 @@ export const Formats: FormatList = [
 	},
 	{
 		name: "[Gen 8] DOUBLES LC",
-		
+
 		mod: 'gen8',
 		gameType: 'doubles',
-		searchShow: false,
 		ruleset: ['Standard Doubles', 'Little Cup', 'Dynamax Clause', 'Swagger Clause', 'Sleep Clause Mod'],
 		banlist: ['Corsola-Galar', 'Cutiefly', 'Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Vulpix', 'Vulpix-Alola'],
 	},
