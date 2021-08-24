@@ -954,7 +954,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	tangela: {
-		tier: "PU",
+		tier: "NU",
 		doublesTier: "DUU",
 	},
 	tangrowth: {
@@ -1044,7 +1044,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 82,
 		randomDoubleBattleMoves: ["brickbreak", "bugbite", "dualwingbeat", "uturn"],
 		randomDoubleBattleLevel: 84,
-		tier: "UU",
+		tier: "NU",
 		doublesTier: "LC Uber",
 	},
 	scizor: {
@@ -1529,8 +1529,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
 	yanma: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "NU",
 	},
 	yanmega: {
 		isNonstandard: "Past",
@@ -1597,8 +1596,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	gligar: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "NU",
 	},
 	gliscor: {
 		isNonstandard: "Past",
