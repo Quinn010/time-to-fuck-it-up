@@ -13130,7 +13130,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			worryseed: ["8L50", "7T", "7L33", "6T", "6L33", "5T", "5L33", "4T", "4L33"],
 		},
 		eventData: [
-			{generation: 3, level: 5, shiny: 1, moves: ["sweetscent", "wish"], pokeball: "pokeball"},
+			{generation: 7, level: 5, shiny: 1, moves: ["sweetscent", "wish"], pokeball: "pokeball"},
 		],
 		encounters: [
 			{generation: 1, level: 20},
@@ -14200,7 +14200,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			zenheadbutt: ["8M", "7T", "7E", "6T", "6E", "5T", "5E", "4T"],
 		},
 		eventData: [
-			{generation: 3, level: 5, shiny: 1, moves: ["healbell", "wish"], pokeball: "pokeball"},
+			{generation: 7, level: 5, shiny: 1, moves: ["healbell", "wish"], pokeball: "pokeball"},
 			{generation: 3, level: 38, moves: ["helpinghand", "doubleedge", "defensecurl", "rollout"]},
 		],
 		encounters: [
@@ -15126,7 +15126,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			zenheadbutt: ["8M", "7T", "6T", "5T", "4T"],
 		},
 		eventData: [
-			{generation: 3, level: 5, shiny: 1, moves: ["sweetscent", "wish"], pokeball: "pokeball"},
+			{generation: 7, level: 5, shiny: 1, moves: ["sweetscent", "wish"], pokeball: "pokeball"},
 			{generation: 3, level: 10, moves: ["pound", "growl", "tailwhip", "refresh"], pokeball: "pokeball"},
 			{generation: 3, level: 39, moves: ["sweetkiss", "thunderbolt", "softboiled", "skillswap"]},
 		],
