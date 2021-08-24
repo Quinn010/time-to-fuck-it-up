@@ -139,7 +139,7 @@ export const Formats: FormatList = [
 		maxLevel: 5,
 		ruleset: ['Little Cup', 'Standard NatDex', 'Dynamax Clause'],
 		banlist: [
-			'Corsola-Galar', 'Cutiefly','Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Vulpix-Alola', 'NU' , 'OU','Porygon + Download'
+		'NU' , 'OU','Porygon + Download'
 		]
 	},
 	{
@@ -154,7 +154,7 @@ export const Formats: FormatList = [
 		maxLevel: 5,
 		ruleset: ['Little Cup', 'Standard NatDex', 'Dynamax Clause'],
 		banlist: [
-			'Corsola-Galar', 'Cutiefly', 'Drifloon', 'Gastly', 'Gothita', 'Rufflet', 'Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Vulpix-Alola', 'NU', 'OU', 'UU'
+			 'NU', 'OU', 'UU'
 			, 'Moody', 'Baton Pass Claus' ,'Sleep Clause Mod' 
 		],
 	},
