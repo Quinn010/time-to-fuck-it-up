@@ -102,7 +102,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUber)",
 	},
 	weedle: {
-		tier: "LCUU",
+		tier: "LC",
 	},
 	kakuna: {
 		isNonstandard: "Past",
@@ -4303,7 +4303,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	skrelp: {
-		tier: "LC",
+		tier: "RU",
 	},
 	dragalge: {
 		randomBattleMoves: ["dracometeor", "dragonpulse", "flipturn", "focusblast", "sludgewave", "toxicspikes"],
@@ -4336,7 +4336,6 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	tyrunt: {
-		isNonstandard: "Past",
 		tier: "NU",
 	},
 	tyrantrum: {
@@ -4344,6 +4343,9 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 82,
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	amaura: {
+		tier: "NU",
 	},
 	aurorus: {
 		randomBattleMoves: ["ancientpower", "blizzard", "earthpower", "freezedry", "stealthrock", "thunderwave"],
