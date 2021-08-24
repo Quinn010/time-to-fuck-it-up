@@ -27,7 +27,7 @@ export const Formats: FormatList = [
 	
 	},
 	{
-		name: "[Gen 8] LCOU",
+		name: "[Gen 8] LC OU",
 		threads: [
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3656348/">LC Metagame Discussion</a>`,
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3661419/">LC Sample Teams</a>`,
@@ -42,7 +42,7 @@ export const Formats: FormatList = [
 		]
 	},
 	{
-		name: "[Gen 8] LCUU",
+		name: "[Gen 8] LC UU",
 		threads: [
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3656348/">LC Metagame Discussion</a>`,
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3661419/">LC Sample Teams</a>`,
@@ -60,7 +60,7 @@ export const Formats: FormatList = [
 	
 	},
 	{
-		name: "[Gen 8] DUBSLC",
+		name: "[Gen 8] DOUBLES LC",
 		threads: [
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3666636/">Doubles OU Metagame Discussion</a>`,
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3658826/">Doubles OU Sample Teams</a>`,
