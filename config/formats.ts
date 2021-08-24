@@ -139,7 +139,7 @@ export const Formats: FormatList = [
 		maxLevel: 5,
 		ruleset: ['Little Cup', 'Standard NatDex', 'Dynamax Clause'],
 		banlist: [
-			'Corsola-Galar', 'Cutiefly','Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Vulpix-Alola', 
+			'Corsola-Galar', 'Cutiefly','Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Vulpix-Alola', 'NU'
 		]
 	},
 	{
@@ -154,8 +154,8 @@ export const Formats: FormatList = [
 		maxLevel: 5,
 		ruleset: ['Little Cup', 'Standard NatDex', 'Dynamax Clause'],
 		banlist: [
-			'Corsola-Galar', 'Cutiefly', 'Drifloon', 'Gastly', 'Gothita', 'Rufflet', 'Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Vulpix-Alola',
-			'Chlorophyll', 'Moody', 'Baton Pass'
+			'Corsola-Galar', 'Cutiefly', 'Drifloon', 'Gastly', 'Gothita', 'Rufflet', 'Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Vulpix-Alola', 'NU'
+			,'Chlorophyll', 'Moody', 'Baton Pass'
 		],
 	},
 	{
