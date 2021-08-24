@@ -4337,7 +4337,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	tyrunt: {
 		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "NU",
 	},
 	tyrantrum: {
 		randomBattleMoves: ["closecombat", "dragondance", "earthquake", "headsmash", "outrage", "stealthrock"],
@@ -4347,7 +4347,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	amaura: {
 		isNonstandard: "Past",
-		tier: "XD",
+		tier: "NU",
 	},
 	aurorus: {
 		randomBattleMoves: ["ancientpower", "blizzard", "earthpower", "freezedry", "stealthrock", "thunderwave"],
