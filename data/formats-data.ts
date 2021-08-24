@@ -4345,10 +4345,6 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
-	amaura: {
-		isNonstandard: "Past",
-		tier: "NU",
-	},
 	aurorus: {
 		randomBattleMoves: ["ancientpower", "blizzard", "earthpower", "freezedry", "stealthrock", "thunderwave"],
 		randomBattleLevel: 88,
