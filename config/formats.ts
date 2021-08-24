@@ -59,7 +59,7 @@ export const Formats: FormatList = [
 
 },
 {
-	name: "[Gen 8] LC NU",
+	name: "[Gen 8] LC NU WIP",
 	threads: [
 		`&bullet; <a href="https://www.smogon.com/forums/threads/3656348/">LC Metagame Discussion</a>`,
 		`&bullet; <a href="https://www.smogon.com/forums/threads/3661419/">LC Sample Teams</a>`,
