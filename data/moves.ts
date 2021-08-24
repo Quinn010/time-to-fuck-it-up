@@ -9119,25 +9119,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {boost: {atk: 1}},
 		contestType: "Cool",
 	},
-	lashout: {
-		num: 808,
-		accuracy: 100,
-		basePower: 75,
-		category: "Physical",
-		name: "Lash Out",
-		pp: 5,
-		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
-		onBasePower(basePower, source) {
-			if (source.statsLoweredThisTurn) {
-				this.debug('lashout buff');
-				return this.chainModify(2);
-			}
-		},
-		secondary: null,
-		target: "normal",
-		type: "Dark",
-	},
 	lastresort: {
 		num: 387,
 		accuracy: 100,
@@ -10705,31 +10686,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Fighting",
 	},
-	meteorbeam: {
-		num: 800,
-		accuracy: 90,
-		basePower: 120,
-		category: "Special",
-		name: "Meteor Beam",
-		pp: 10,
-		priority: 0,
-		flags: {charge: 1, protect: 1, mirror: 1},
-		onTryMove(attacker, defender, move) {
-			if (attacker.removeVolatile(move.id)) {
-				return;
-			}
-			this.add('-prepare', attacker, move.name);
-			this.boost({spa: 1}, attacker, attacker, move);
-			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
-				return;
-			}
-			attacker.addVolatile('twoturnmove', defender);
-			return null;
-		},
-		secondary: null,
-		target: "normal",
-		type: "Rock",
-	},
 	meteormash: {
 		num: 309,
 		accuracy: 90,
@@ -11917,7 +11873,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	outrage: {
 		num: 200,
 		accuracy: 100,
-		basePower: 120,
+		basePower: 90,
 		category: "Physical",
 		name: "Outrage",
 		pp: 10,
@@ -11935,19 +11891,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "randomNormal",
 		type: "Dragon",
 		contestType: "Cool",
-	},
-	overdrive: {
-		num: 786,
-		accuracy: 100,
-		basePower: 80,
-		category: "Special",
-		name: "Overdrive",
-		pp: 10,
-		priority: 0,
-		flags: {protect: 1, mirror: 1, sound: 1, authentic: 1},
-		secondary: null,
-		target: "allAdjacentFoes",
-		type: "Electric",
 	},
 	overheat: {
 		num: 315,
@@ -12300,25 +12243,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {boost: {def: 1}},
 		contestType: "Cute",
 	},
-	playrough: {
-		num: 583,
-		accuracy: 90,
-		basePower: 90,
-		category: "Physical",
-		name: "Play Rough",
-		pp: 10,
-		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1},
-		secondary: {
-			chance: 10,
-			boosts: {
-				atk: -1,
-			},
-		},
-		target: "normal",
-		type: "Fairy",
-		contestType: "Cute",
-	},
 	pluck: {
 		num: 365,
 		accuracy: 100,
@@ -12444,53 +12368,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Poison",
 		contestType: "Clever",
-	},
-	pollenpuff: {
-		num: 676,
-		accuracy: 100,
-		basePower: 90,
-		category: "Special",
-		name: "Pollen Puff",
-		pp: 15,
-		priority: 0,
-		flags: {bullet: 1, protect: 1, mirror: 1},
-		onTryHit(target, source, move) {
-			if (source.side === target.side) {
-				move.basePower = 0;
-			}
-		},
-		onHit(target, source) {
-			if (source.side === target.side) {
-				this.heal(Math.floor(target.baseMaxhp * 0.5));
-			}
-		},
-		secondary: null,
-		target: "normal",
-		type: "Bug",
-		contestType: "Cute",
-	},
-	poltergeist: {
-		num: 809,
-		accuracy: 90,
-		basePower: 110,
-		category: "Physical",
-		name: "Poltergeist",
-		pp: 5,
-		priority: 0,
-		flags: {protect: 1, mirror: 1},
-		onTry(pokemon, target) {
-			if (!target.item) {
-				this.attrLastMove('[still]');
-				this.add('-fail', pokemon);
-				return null;
-			}
-		},
-		onTryHit(target, source, move) {
-			this.add('-activate', target, 'move: Poltergeist', this.dex.getItem(target.item).name);
-		},
-		secondary: null,
-		target: "normal",
-		type: "Ghost",
 	},
 	pound: {
 		num: 1,
@@ -12681,27 +12558,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		zMove: {basePower: 160},
 		maxMove: {basePower: 130},
 		contestType: "Clever",
-	},
-	poweruppunch: {
-		num: 612,
-		accuracy: 100,
-		basePower: 40,
-		category: "Physical",
-		name: "Power-Up Punch",
-		pp: 20,
-		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
-		secondary: {
-			chance: 100,
-			self: {
-				boosts: {
-					atk: 1,
-				},
-			},
-		},
-		target: "normal",
-		type: "Fighting",
-		contestType: "Tough",
 	},
 	powerwhip: {
 		num: 438,
