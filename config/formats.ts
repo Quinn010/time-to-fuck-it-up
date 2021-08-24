@@ -148,14 +148,13 @@ export const Formats: FormatList = [
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3656348/">LC Metagame Discussion</a>`,
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3661419/">LC Sample Teams</a>`,
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3657374/">LC Viability Rankings</a>`,
-		],
 
+		],
 		mod: 'gen8',
 		maxLevel: 5,
 		ruleset: ['Little Cup', 'Standard NatDex', 'Dynamax Clause'],
 		banlist: [
-			 'NU', 'OU', 'UU'
-			, 'Moody','Baton Pass Claus' ,'Sleep Clause Mod' 
+		'NU' ,'OU','Porygon + Download','UU' 
 		],
 	},
 	{
