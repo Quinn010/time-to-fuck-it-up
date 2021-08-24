@@ -583,8 +583,7 @@ export const Items: {[itemid: string]: ItemData} = {
 			}
 		},
 		num: 558,
-		gen: 5,
-		isNonstandard: "Past",
+		gen: 8,
 	},
 	bugmemory: {
 		name: "Bug Memory",
