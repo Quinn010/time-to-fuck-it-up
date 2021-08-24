@@ -1820,6 +1820,20 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 1113,
 		gen: 8,
 	},
+	flyinggem: {
+		name: "Flying Gem",
+		spritenum: 149,
+		isGem: true,
+		isNonstandard: null,
+		onSourceTryPrimaryHit(target, source, move) {
+			if (target === source || move.category === 'Status') return;
+			if (move.type === 'Flying' && source.useItem()) {
+				source.addVolatile('gem');
+			}
+		},
+		num: 556,
+		gen: 5,
+	},
 	flyingmemory: {
 		name: "Flying Memory",
 		spritenum: 669,
@@ -7090,13 +7104,21 @@ export const Items: {[itemid: string]: ItemData} = {
 		gen: 2,
 		isNonstandard: "Past",
 	},
-	flyinggem: {
-		name: "Flying Gem",
-        spritenum: 149,
-		num: 556,
-		gen: 8,
-		isNonstandard: null,
-		desc: "Holder's first successful Flying-type attack will have 1.5x power. Single use.",
-		}
-	}
 
+	// CAP items
+
+	crucibellite: {
+		name: "Crucibellite",
+		spritenum: 577,
+		megaStone: "Crucibelle-Mega",
+		megaEvolves: "Crucibelle",
+		itemUser: ["Crucibelle"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1,
+		gen: 6,
+		isNonstandard: "CAP",
+	},
+};
