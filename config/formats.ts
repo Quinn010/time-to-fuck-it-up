@@ -155,7 +155,7 @@ export const Formats: FormatList = [
 		ruleset: ['Little Cup', 'Standard NatDex', 'Dynamax Clause'],
 		banlist: [
 			 'NU', 'OU', 'UU'
-			, 'Moody', 'Baton Pass Claus' ,'Sleep Clause Mod' 
+			, 'Moody','Baton Pass Claus' ,'Sleep Clause Mod' 
 		],
 	},
 	{
