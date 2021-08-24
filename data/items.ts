@@ -546,7 +546,8 @@ export const Items: {[itemid: string]: ItemData} = {
 		},
 		// Item activation located in scripts.js
 		num: 1121,
-		gen: 8,
+		gen: 5,
+		isNonstandard: "Past",
 	},
 	bottlecap: {
 		name: "Bottle Cap",
