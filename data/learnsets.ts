@@ -12596,7 +12596,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			trick: ["7T", "6T", "5T", "4T"],
 			trickroom: ["7M", "6M", "5M", "4M"],
 			wakeupslap: ["7L29"],
-			wish: ["3S0"],
+			wish: ["7E", "6E", "5E", "4E", "3E"],
 			zapcannon: ["7V"],
 			zenheadbutt: ["7T", "7L41", "6T", "6L41", "5T", "5L41", "4T", "4L50"],
 		},
