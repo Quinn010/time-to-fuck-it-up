@@ -23,7 +23,7 @@ export const Formats: FormatList = [
 	///////////////////////////////////////////////////////////////////
 
 	{
-		section: "LC Singles",
+		section: "LC",
 	
 	},
 	{
@@ -75,13 +75,6 @@ export const Formats: FormatList = [
 ]
 },
 
-	// Sw/Sh Doubles
-	///////////////////////////////////////////////////////////////////
-
-	{
-		section: "LC Doubles",
-	
-	},
 	{
 		name: "[Gen 8] DOUBLES LC",
 		threads: [
@@ -95,6 +88,5 @@ export const Formats: FormatList = [
 		searchShow: false,
 		ruleset: ['Standard Doubles', 'Little Cup', 'Dynamax Clause', 'Swagger Clause', 'Sleep Clause Mod'],
 		banlist: ['Corsola-Galar', 'Cutiefly', 'Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Vulpix', 'Vulpix-Alola', 'NU'],
-
 	},
 ];
