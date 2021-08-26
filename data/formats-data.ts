@@ -1554,7 +1554,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
 	misdreavus: {
-		tier: "OU",
+		tier: "NU",
 	},
 	mismagius: {
 		isNonstandard: "Past",
@@ -1896,10 +1896,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 	},
 	zigzagoon: {
-		tier: "NU",
+		tier: "LC",
 	},
 	zigzagoongalar: {
-		tier: "LC",
+		tier: "NU",
 	},
 	linoone: {
 		randomBattleMoves: ["bellydrum", "extremespeed", "stompingtantrum", "throatchop"],
@@ -2658,7 +2658,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	chimchar: {
 		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "LC",
 	},
 	monferno: {
 		isNonstandard: "Past",
