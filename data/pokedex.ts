@@ -10411,7 +10411,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		name: "Cubchoo",
 		types: ["Ice"],
 		baseStats: {hp: 55, atk: 70, def: 40, spa: 60, spd: 40, spe: 40},
-		abilities: {0: "Snow Cloak", 1: "Slush Rush", H: "Rattled"},
+		abilities: {0: "Snow Cloak"},
 		heightm: 0.5,
 		weightkg: 8.5,
 		color: "White",
