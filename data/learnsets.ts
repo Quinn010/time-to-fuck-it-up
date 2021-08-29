@@ -782,6 +782,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 5, level: 1, shiny: 1, ivs: {hp: 31}, moves: ["falseswipe", "block", "hydrocannon", "followme"], pokeball: "pokeball"},
 			{generation: 6, level: 5, moves: ["tailwhip", "watergun", "withdraw", "bubble"], pokeball: "cherishball"},
 			{generation: 6, level: 5, isHidden: true, moves: ["tackle", "tailwhip", "celebrate"], pokeball: "cherishball"},
+			{generation: 7, level: 5, moves: ["tailwhip", "watergun", "withdraw", " shellsmash "], pokeball: "cherishball"},
 		],
 		encounters: [
 			{generation: 1, level: 5},
