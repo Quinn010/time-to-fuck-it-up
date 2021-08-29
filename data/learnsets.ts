@@ -751,7 +751,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			scald: ["8M", "8V", "7M", "6M", "5M"],
 			secretpower: ["6M", "4M", "3M"],
 			seismictoss: ["8V", "7V", "3T"],
-			shellsmash: ["8L27"],
+
 			skullbash: ["8L36", "8V", "7L31", "7V", "6L31", "5L31", "4L31", "3L40"],
 			sleeptalk: ["8M", "7M", "7V", "6M", "5T", "4M", "3T"],
 			snore: ["8M", "7T", "7V", "6T", "5T", "4T", "3T"],
@@ -775,6 +775,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			workup: ["8M", "7M"],
 			yawn: ["8E", "7E", "6E", "5E", "4E", "3E"],
 			zenheadbutt: ["8M", "7T", "6T", "5T", "4T"],
+			shellsmash: ["8L44", "8V", "7L56", "6L56", "5L56"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["tackle", "tailwhip", "bubble", "withdraw"], pokeball: "pokeball"},
@@ -782,7 +783,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			{generation: 5, level: 1, shiny: 1, ivs: {hp: 31}, moves: ["falseswipe", "block", "hydrocannon", "followme"], pokeball: "pokeball"},
 			{generation: 6, level: 5, moves: ["tailwhip", "watergun", "withdraw", "bubble"], pokeball: "cherishball"},
 			{generation: 6, level: 5, isHidden: true, moves: ["tackle", "tailwhip", "celebrate"], pokeball: "cherishball"},
-			{generation: 7, level: 5, moves: ["tailwhip", "watergun", "withdraw", " shellsmash "], pokeball: "cherishball"},
+			{generation: 7, level: 5, moves: ["tailwhip", "watergun", "hiddenpower", "shellsmash "], pokeball: "cherishball"},
 		],
 		encounters: [
 			{generation: 1, level: 5},
