@@ -3711,7 +3711,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	ferroseed: {
-		tier: "NU",
+		tier: "LC",
 		doublesTier: "LC",
 	},
 	ferrothorn: {
