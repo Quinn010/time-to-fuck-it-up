@@ -12946,7 +12946,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			sonicboom: ["8V", "7L4", "7V", "6L4", "5L8", "4L8", "3L15"],
 			spark: ["7L9", "6L9", "5L12", "4L12", "3L21", "3S0"],
 			substitute: ["8V", "7M", "7V", "6M", "5M", "4M", "3T"],
-			suckerpunch: ["4T"],
+			suckerpunch: ["8V", "7L29", "6L19", "5L19", "4T", "4L19"],
 			swagger: ["7M", "7V", "6M", "5M", "4M", "3T"],
 			swift: ["8V", "7L20", "7V", "6L20", "5L36", "4T", "4L33", "3T", "3L42", "3S0"],
 			tackle: ["8V", "7L1", "7V", "6L1", "5L5", "4L5", "3L1"],
