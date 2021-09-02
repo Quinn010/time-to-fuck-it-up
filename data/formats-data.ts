@@ -3711,7 +3711,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	ferroseed: {
-		tier: "NU",
+		tier: "UU",
 		doublesTier: "LC",
 	},
 	ferrothorn: {
@@ -3832,7 +3832,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	mienfoo: {
-		tier: "LC",
+		tier: "UU",
 	},
 	mienshao: {
 		randomBattleMoves: ["closecombat", "fakeout", "knockoff", "poisonjab", "swordsdance", "uturn"],
