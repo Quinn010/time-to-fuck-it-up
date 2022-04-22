@@ -52915,6 +52915,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 	},
 	archen: {
 		learnset: {
+			rockblast: ["8M"],
 			acrobatics: ["7M", "7L28", "6M", "6L28", "5M", "5L28"],
 			aerialace: ["7M", "6M", "5M"],
 			agility: ["7L21", "6L21", "5L21"],
